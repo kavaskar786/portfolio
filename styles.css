@@ -256,10 +256,10 @@ nav {
   color:white;
 }
 .entire_gall{
-  background-image: url(/images/img_gall.jpg);
+  background-image: url('/images/img_gall.jpg');
 }
 .entire_reg{
-  background-image: url(/images/home_img1.jpg);
+  background-image: url("/images/home_img1.jpg");
   color:white;
 }
 
