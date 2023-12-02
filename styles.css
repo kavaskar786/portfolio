@@ -28,7 +28,7 @@ nav {
     text-decoration: none;
   }
   .entire_content{
-    background-image: url(/images/home_img4.jpg);
+    background-image: url('/images/home_img4.jpg');
   }
   .entire_content p:hover{
     transform: scale(1.05);
