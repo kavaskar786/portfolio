@@ -28,6 +28,7 @@ nav {
     text-decoration: none;
   }
   .entire_content{
+    background-color:black;
     background-image: url('/images/home_img4.jpg');
   }
   .entire_content p:hover{
