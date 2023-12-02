@@ -1,0 +1,288 @@
+
+*{
+  transition:1s;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  ul li {
+    margin-right: 20px;
+  }
+  
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .entire_content{
+    background-image: url(/images/home_img4.jpg);
+  }
+  .entire_content p:hover{
+    transform: scale(1.05);
+  }
+  .entire_content img:hover{
+    transform: scale(1.05);
+  }
+  .nav-container ul li:hover{
+    transform: scale(1.05);
+  }
+
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .gallery img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius:20px;
+  }
+  .gal_img:hover{
+    transform: scale(1.05);
+  }
+  #gal_head{
+    text-align: center;
+    font-size: 5vw;
+  }
+ 
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .entire_he{
+    background-image: url('images/neom-kzEFwhXPXwo-unsplash.jpg');
+  }
+  
+  .hero {
+    background-image: url('path/to/hero-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero button:hover {
+    background-color: #2980b9;
+  }
+  
+
+  .modal-content {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-header {
+    background-color: #3498db;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  .modal-body {
+    padding: 1rem;
+  }
+  
+  .modal-footer {
+    border-top: none;
+    padding: 1rem;
+    text-align: right;
+  }
+  
+  .close {
+    color: #000;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  .close:hover {
+    opacity: 1;
+  }
+
+  
+  .parallax-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+ 
+.parallax {
+    background-image: url('/images/prallax_img1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+  }
+  
+  .parallax-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+ 
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+ 
+
+
+@media screen and (max-width: 768px) {
+   
+    .nav-container {
+      justify-content: space-between;
+    }
+  
+    
+    .carousel-inner img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+   
+    .hero-content {
+      padding: 50px;
+    }
+  
+  }
+  
+ 
+.carousel {
+  max-width: 80%; 
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  height: 35vw;
+}
+#profile_photo{
+  border-radius: 50%;
+  margin:7vw 6vw 10vw 5vw;
+  height:25vw;
+  width:25vw;
+  float:left;
+}
+#profile_photo2{
+  border-radius: 50%;
+  margin:3vw 5vw 3vw 5vw;
+  height:25vw;
+  width:25vw;
+  float:right;
+}
+.abt_content{
+  color:white;
+}
+.entire_gall{
+  background-image: url(/images/img_gall.jpg);
+}
+.entire_reg{
+  background-image: url(/images/home_img1.jpg);
+  color:white;
+}
+
+#name{
+  font-size: 8vw;
+  
+  padding:5vw 0px 0vw 0px;
+  color:white;
+  vertical-align: middle;
+  justify-content: center;
+}
+#profess{
+  float:left;
+  margin:.5vw 15vw 6vw 7.9vw;
+  font-size: 3vw;
+  float:left;
+}
+#profess1{
+  float:right;
+  margin:0vw 15vw 5vw 7.9vw;
+  font-size: 3vw;
+  float:right;
+}
+
+
+
