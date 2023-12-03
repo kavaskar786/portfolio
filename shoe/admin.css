@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --textColor: rgb(54, 54, 54);
+  --NewVolor: rgb(255, 157, 0);
+  --cartColor: rgb(92, 12, 124);
+  --smallColor: rgb(92, 92, 92);
+  --bgColor: rgb(245, 245, 245);
+  --whiteColor: rgb(248, 248, 248);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.admin-navBar {
+  background: var(--cartColor);
+  padding: 1rem;
+}
+
+.admin-navBar .admin-navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.admin-navBar .admin-navLink {
+  margin: 0 1rem;
+  color: var(--bgColor);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.body {
+  background: var(--bgColor);
+  padding: 3rem 0;
+}
+
+.body .container {
+  margin: 0 1rem;
+}
+
+.body .container .content {
+  padding: 0.5rem;
+}
+
+.body .title {
+  font-size: 1.2rem;
+  padding: 1rem 0 3rem;
+  text-align: center;
+}
+
+.body .boxes {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .boxes .box {
+  width: 200px;
+  padding: 0.8rem;
+  text-align: center;
+  background: var(--whiteColor);
+  -webkit-box-shadow: 0 2px 4px var(--textColor);
+          box-shadow: 0 2px 4px var(--textColor);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.body .boxes .box .boxTitle {
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.body .boxes .box .boxDesc {
+  font-size: 1.2rem;
+}
+
+.body .boxes .box:hover {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.footer {
+  background: var(--cartColor);
+  color: var(--bgColor);
+}
+
+.footer .content {
+  padding: 1rem;
+}
+
+.headers {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.tableContent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+/*# sourceMappingURL=admin.css.map */

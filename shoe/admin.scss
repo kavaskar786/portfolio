@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --textColor: rgb(54, 54, 54);
+  --NewVolor: rgb(255, 157, 0);
+  --cartColor: rgb(92, 12, 124);
+  --smallColor: rgb(92, 92, 92);
+  --bgColor: rgb(245, 245, 245);
+  --whiteColor: rgb(248, 248, 248);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.admin-navBar {
+  background: var(--cartColor);
+  padding: 1rem;
+
+  .admin-navList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .admin-navLink {
+    margin: 0 1rem;
+    color: var(--bgColor);
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.body {
+  background: var(--bgColor);
+  padding: 3rem 0;
+
+  .container {
+    margin: 0 1rem;
+
+    .content {
+      padding: 0.5rem;
+    }
+  }
+
+  .title {
+    font-size: 1.2rem;
+    padding: 1rem 0 3rem;
+    text-align: center;
+  }
+
+  .boxes {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+
+    .box {
+      width: 200px;
+      padding: 0.8rem;
+      text-align: center;
+      background: var(--whiteColor);
+      box-shadow: 0 2px 4px var(--textColor);
+      transition: 0.3s;
+
+      .boxTitle {
+        padding: 0.5rem;
+        font-size: 2rem;
+      }
+
+      .boxDesc {
+        font-size: 1.2rem;
+      }
+    }
+
+    .box:hover {
+      transform: translateY(-5%);
+    }
+  }
+}
+
+.footer {
+  background: var(--cartColor);
+  color: var(--bgColor);
+
+  .content {
+    padding: 1rem;
+  }
+}
+
+// Admin CSS
+.headers {
+  display: grid;
+  gap: 1rem;
+}
+
+.tableContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

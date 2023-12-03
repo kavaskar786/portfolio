@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/Main.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.075);
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food {
+  color: yellow;
+  border: 2px dashed yellow;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 1.1rem;
+  display: none;
+}
+//let us first comment it out because we shall display it in the 1024 size +
+.food:hover {
+  background: yellow;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    height: 60%;
+    width: 80%;
+    right: -100%;
+    top: 7%;
+    background: rgba(255, 255, 255, 0.294);
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 7rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transition: 0.4s;
+  }
+}
+
+.show {
+  right: 0;
+}
+
+.navItem {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.navLink:hover {
+  color: yellow;
+}
+
+.menu-toggle {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu-toggle .bar {
+  height: 7px;
+  width: 100%;
+  background: white;
+  margin: 3px 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 110px auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  span {
+    color: yellow;
+  }
+}
+
+.hero-row {
+  margin: 1rem 0;
+}
+
+.title {
+  color: yellow;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.sub-title {
+  font-size: 1rem;
+  color: white;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.fill {
+  border: 2px solid yellow;
+  position: relative;
+  color: black;
+  z-index: 1;
+}
+.fill::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: yellow;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+.fill:hover::after {
+  width: 0;
+}
+.fill:hover {
+  color: yellow;
+}
+
+a {
+  text-decoration: none;
+}
+
+.no-fill {
+  border: 2px solid yellow;
+  position: relative;
+  color: yellow;
+  z-index: 1;
+}
+.no-fill::after {
+  content: "";
+  height: 100%;
+  width: 0;
+  background: yellow;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+.no-fill:hover::after {
+  width: 100%;
+}
+.no-fill:hover {
+  color: black;
+}
+
+.lower {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(rgba(255, 251, 0, 0.9), rgba(255, 251, 0, 0.9)),
+    url(./images/submain.jpg);
+  padding: 2rem 0;
+  display: none; //This is to display the lower section off when its lower than 600px
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.col {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  padding: 0 1rem;
+  transition: 0.6s;
+}
+.col:hover {
+  transform: translateY(-10px);
+}
+
+//Now let as make this Landing page responsive
+
+@media screen and (min-width: 600px) {
+  .hero {
+    margin: 100px auto;
+  }
+
+  .cta {
+    flex-direction: row;
+  }
+
+  .btn {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navList {
+    display: flex;
+  }
+
+  .navLink {
+    margin: 0 2rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .container,
+  .lower {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .lower {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .food {
+    display: block;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+    color: white;
+    margin: 2rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+
+  .row {
+    width: 80%;
+  }
+}
