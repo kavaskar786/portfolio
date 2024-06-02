@@ -864,7 +864,7 @@ video {
 .boxes .box .wrapperText .title {
   display: block;
   padding: 10px 0;
-  text-align: right;
+  text-align: center;
   color: var(--textColor);
 }
 
